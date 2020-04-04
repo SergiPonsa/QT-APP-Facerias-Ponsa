@@ -23,6 +23,8 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    Page1.ui \
+    Page2.ui \
     mainwindow.ui \
     pantalla3.ui \
     pantalla3_copy.ui

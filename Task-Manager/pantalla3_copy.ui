@@ -53,7 +53,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;
 </string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>100</x>
