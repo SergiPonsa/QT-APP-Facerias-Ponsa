@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>20</y>
+      <y>0</y>
       <width>874</width>
       <height>633</height>
      </rect>
@@ -30,456 +30,536 @@
      <string notr="true">background-color: rgb(52, 101, 164);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
-    <widget class="QWidget" name="page_1">
-     <property name="windowTitle">
-      <string>MainWindow</string>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(52, 101, 164);</string>
-     </property>
+    <widget class="QWidget" name="page_plan">
+     <widget class="QWidget" name="layoutWidget_2">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>801</width>
+        <x>70</x>
+        <y>40</y>
+        <width>701</width>
         <height>551</height>
        </rect>
       </property>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>50</x>
-         <y>0</y>
-         <width>701</width>
-         <height>551</height>
-        </rect>
+      <layout class="QVBoxLayout" name="_2">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <widget class="QListWidget" name="listWidget">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(114, 159, 207);</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton">
-          <property name="text">
-           <string>New Task</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     <widget class="QMenuBar" name="menubar">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>800</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QStatusBar" name="statusbar">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>3</width>
-        <height>20</height>
-       </rect>
-      </property>
+       <item>
+        <widget class="QListWidget" name="listWidget_NewTask">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114, 159, 207);</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="NewPlan_Button">
+         <property name="text">
+          <string>New Plan</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_2">
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(52, 101, 164);</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(114, 159, 207);</string>
-          </property>
-          <property name="text">
-           <string>Name</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QTextEdit" name="textEdit">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(114, 159, 207);</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QDateTimeEdit" name="dateTimeEdit">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(114, 159, 207);</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QComboBox" name="comboBox"/>
-          </item>
-          <item>
-           <widget class="QCheckBox" name="checkBox">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(114, 159, 207);</string>
-            </property>
-            <property name="text">
-             <string>Repeat</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton">
-          <property name="text">
-           <string>Set</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
+    <widget class="QWidget" name="widget">
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>150</y>
+        <width>258</width>
+        <height>312</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayoutSetPlan">
+       <item>
+        <widget class="QTextEdit" name="PlanName_textEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114, 159, 207);</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="PlanDescription_textEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114, 159, 207);</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateTimeEdit" name="dateTimeEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114, 159, 207);</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QComboBox" name="Periocity_comboBox"/>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="Repeat_checkBox">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(114, 159, 207);</string>
+           </property>
+           <property name="text">
+            <string>Repeat</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SetPlan_Button">
+         <property name="text">
+          <string>Set</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
-    <widget class="QWidget" name="page_3">
+    <widget class="QWidget" name="widget_2">
      <property name="windowTitle">
       <string>MainWindow</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(52, 101, 164);</string>
      </property>
+     <widget class="QLabel" name="PlanName_label">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>336</width>
-        <height>501</height>
+        <x>40</x>
+        <y>10</y>
+        <width>791</width>
+        <height>41</height>
        </rect>
       </property>
-      <widget class="QLabel" name="label">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>10</y>
-         <width>171</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(114 ,159, 207);
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(114 ,159, 207);
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 </string>
-       </property>
-       <property name="text">
-        <string>Name of the task</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QListWidget" name="listWidget">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>80</y>
-         <width>256</width>
-         <height>192</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(114 ,159, 207);
-font: 14pt &quot;MS Shell Dlg 2&quot;;
-</string>
-       </property>
-      </widget>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>310</y>
-         <width>111</width>
-         <height>181</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <widget class="QPushButton" name="pushButton_2">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(114 ,159, 207);
-font: 14pt &quot;MS Shell Dlg 2&quot;;
-</string>
-            </property>
-            <property name="text">
-             <string>PushButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_4">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(114 ,159, 207);
-font: 14pt &quot;MS Shell Dlg 2&quot;;
-</string>
-            </property>
-            <property name="text">
-             <string>PushButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_5">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(114 ,159, 207);
-font: 14pt &quot;MS Shell Dlg 2&quot;;
-</string>
-            </property>
-            <property name="text">
-             <string>PushButton</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="radioButton">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(114 ,159, 207);
-font: 14pt &quot;MS Shell Dlg 2&quot;;
-</string>
-          </property>
-          <property name="text">
-           <string>Enabled</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     <widget class="QMenuBar" name="menubar">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>874</width>
-        <height>21</height>
-       </rect>
+      </property>
+      <property name="text">
+       <string>Name of the Plan</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QStatusBar" name="statusbar">
+     <widget class="QListWidget" name="Task_listWidget">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>3</width>
-        <height>20</height>
+        <x>40</x>
+        <y>80</y>
+        <width>791</width>
+        <height>192</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>310</y>
+        <width>146</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayoutSeeTask">
+       <item>
+        <layout class="QVBoxLayout" name="_3">
+         <item>
+          <widget class="QPushButton" name="Edit_Button">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>Edit</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Delete_Button">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>Delete</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="TaskManager_Button">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>Task Manager</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="Enabled_radioButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Enabled</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Back2Plan_Button">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Go Back</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_5">
+    <widget class="QWidget" name="page_ManageTask">
      <property name="windowTitle">
       <string>MainWindow</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(52, 101, 164);</string>
      </property>
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>821</width>
-        <height>581</height>
+        <x>60</x>
+        <y>20</y>
+        <width>751</width>
+        <height>571</height>
        </rect>
       </property>
-      <widget class="QLabel" name="label">
-       <property name="geometry">
-        <rect>
-         <x>50</x>
-         <y>50</y>
-         <width>331</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(114 ,159, 207);
+      <layout class="QVBoxLayout" name="_4">
+       <item>
+        <widget class="QLabel" name="AddTask_label">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 </string>
-       </property>
-       <property name="text">
-        <string>ADD TASK</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit">
-       <property name="geometry">
-        <rect>
-         <x>50</x>
-         <y>80</y>
-         <width>331</width>
-         <height>101</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton">
-       <property name="geometry">
-        <rect>
-         <x>270</x>
-         <y>190</y>
-         <width>111</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(114 ,159, 207);
+         </property>
+         <property name="text">
+          <string>ADD TASK</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="NameNewTask_textEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="AddTask_Button">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 </string>
-       </property>
-       <property name="text">
-        <string>ADD</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>340</y>
-         <width>341</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(114 ,159, 207);
+         </property>
+         <property name="text">
+          <string>ADD</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="DeleteTask_label">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
 font: 14pt &quot;MS Shell Dlg 2&quot;;
 </string>
-       </property>
-       <property name="text">
-        <string>MODIFY TASK</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="geometry">
-        <rect>
-         <x>260</x>
-         <y>500</y>
-         <width>111</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(114 ,159, 207);
-font: 14pt &quot;MS Shell Dlg 2&quot;;
-</string>
-       </property>
-       <property name="text">
-        <string>MODIFY</string>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_2">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>380</y>
-         <width>171</width>
-         <height>101</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="comboBox">
-       <property name="geometry">
-        <rect>
-         <x>50</x>
-         <y>410</y>
-         <width>131</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>440</x>
-         <y>240</y>
-         <width>341</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(114 ,159, 207);
-font: 14pt &quot;MS Shell Dlg 2&quot;;
-</string>
-       </property>
-       <property name="text">
-        <string>DELETE TASK</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="geometry">
-        <rect>
-         <x>680</x>
-         <y>330</y>
-         <width>101</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(114 ,159, 207);
+         </property>
+         <property name="text">
+          <string>DELETE TASK</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="TaskModify_ComboBox"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="DeleteTask_Button">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
 	font: 14pt &quot;MS Shell Dlg 2&quot;;
 	</string>
-       </property>
-       <property name="text">
-        <string>DELETE</string>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="comboBox_2">
-       <property name="geometry">
-        <rect>
-         <x>440</x>
-         <y>280</y>
-         <width>231</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-     <widget class="QMenuBar" name="menubar">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>874</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QStatusBar" name="statusbar">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>3</width>
-        <height>20</height>
-       </rect>
-      </property>
+         </property>
+         <property name="text">
+          <string>DELETE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_10">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="ModifyTask_label">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>MODIFY TASK</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="ModifyTask_textEdit"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="TaskDelete_comboBox"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ModifyTask_Button">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>MODIFY</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_15">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_14">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="BACKTASK_Button">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(114 ,159, 207);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>GO BACK</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </widget>
@@ -490,7 +570,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;
      <x>0</x>
      <y>0</y>
      <width>1041</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

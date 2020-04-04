@@ -15,6 +15,23 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_NewPlan_Button_clicked();
+
+    void on_SetPlan_Button_clicked();
+
+    void on_listWidget_NewTask_itemSelectionChanged();
+
+    void on_Edit_Button_clicked();
+
+    void on_Delete_Button_clicked();
+
+    void on_TaskManager_Button_clicked();
+
+    void on_Back2Plan_Button_clicked();
+
+    void on_BACKTASK_Button_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
