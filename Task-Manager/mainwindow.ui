@@ -39,7 +39,6 @@
      <property name="styleSheet">
       <string notr="true">background-color: rgb(52, 101, 164);</string>
      </property>
-     <widget class="QWidget" name="centralwidget" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -74,7 +73,6 @@
         </item>
        </layout>
       </widget>
-     </widget>
      <widget class="QMenuBar" name="menubar">
       <property name="geometry">
        <rect>
@@ -162,7 +160,6 @@
      <property name="styleSheet">
       <string notr="true">background-color: rgb(52, 101, 164);</string>
      </property>
-     <widget class="QWidget" name="centralwidget" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -271,7 +268,6 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;
         </item>
        </layout>
       </widget>
-     </widget>
      <widget class="QMenuBar" name="menubar">
       <property name="geometry">
        <rect>
@@ -300,7 +296,6 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;
      <property name="styleSheet">
       <string notr="true">background-color: rgb(52, 101, 164);</string>
      </property>
-     <widget class="QWidget" name="centralwidget" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -466,7 +461,6 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;
         </rect>
        </property>
       </widget>
-     </widget>
      <widget class="QMenuBar" name="menubar">
       <property name="geometry">
        <rect>
